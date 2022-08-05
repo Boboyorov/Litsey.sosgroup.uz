@@ -1,0 +1,104 @@
+// foreign start
+
+.foreign{
+    position: relative;
+    margin-bottom: 100px;
+
+    &__list{
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    &__img{
+        @include fiximg(100%,500px,true);
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        @include fontAll(16px,400,$text);
+        line-height: 30px;
+    }
+
+    &__cart{
+        .news__item__data{
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+
+    &__video{
+        iframe{
+            width: 100%;
+            height: 700px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// foreign end
+
+
+
+@media (max-width:1200px){
+    .foreign__img {
+        margin-bottom: 20px;
+        height: 400px;
+    }
+
+    .foreign__video iframe{
+        height: 600px;
+    }
+}
+
+
+@media (max-width:1000px){
+    .foreign__video iframe{
+        height: 500px;
+    }
+
+    .foreign__img{
+        height: 300px;
+    }
+}
+
+
+@media (max-width:700px){
+    .foreign__img{
+        height:auto;
+    }
+}
+
+
+@media (max-width:650px){
+    .foreign__list {
+        margin-top: 30px;
+    }
+
+    .foreign__text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .foreign__cart .news__item__data {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .foreign__video iframe{
+        height: 350px;
+    }
+}
+
+
+@media (max-width:550px){
+    .foreign__video iframe{
+        height: 300px;
+    }
+}
+
+
+@media (max-width:450px){
+    .foreign__video iframe{
+        height: 250px;
+    }
+}
